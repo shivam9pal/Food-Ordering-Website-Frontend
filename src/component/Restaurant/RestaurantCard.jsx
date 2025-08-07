@@ -1,4 +1,4 @@
-import { Card, Chip, IconButton } from '@mui/material'
+import { Card, Chip, IconButton, FormControlLabel, Radio } from '@mui/material'
 import React from 'react'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -6,6 +6,11 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 export const RestaurantCard = () => {
   const isOpen = true; // replace with your logic
   const isFav = true;  // replace with your logic
+  const foodType = [
+    { value: 'indian', label: 'Indian' },
+    { value: 'chinese', label: 'Chinese' },
+    { value: 'italian', label: 'Italian' },
+  ]; // replace with your logic
 
   return (
     <Card className=' w-[18rem]'>
@@ -33,6 +38,16 @@ export const RestaurantCard = () => {
             {isFav ? <FavoriteIcon /> : <FavoriteBorderIcon />}
           </IconButton>
         </div>
+      </div>
+      <div>
+        {foodType.map((item) => (
+          <FormControlLabel
+            key={item.value}
+            value={item.value}
+            control={<Radio />}
+            label={item.label}
+          />
+        ))}
       </div>
     </Card>
   )
