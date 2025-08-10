@@ -16,7 +16,8 @@ export const RestaurantCard = () => {
     <Card className=' w-[18rem]'>
       <div className={`${isOpen ? 'cursor-pointer' : 'cursor-not-allowed'} relative`}>
         <img className='w-full h-[10rem] rounded-t-md object-cover'
-          src="" alt="" />
+          src="https://cdn.pixabay.com/photo/2020/08/27/07/31/restaurant-5521372_1280.jpg" alt="" /> 
+
         <Chip
           size="small"
           className="absolute top-2 left-2"
