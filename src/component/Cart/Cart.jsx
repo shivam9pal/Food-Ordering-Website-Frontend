@@ -10,7 +10,7 @@ import TextField from '@mui/material/TextField'
 
 
   
-const style = {
+export const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',

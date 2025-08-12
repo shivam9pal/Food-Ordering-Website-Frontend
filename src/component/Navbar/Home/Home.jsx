@@ -3,6 +3,7 @@ import "./Home.css"
 import "./MultiItemCarousel"
 import { MultiItemCarousel } from './MultiItemCarousel'
 import { RestaurantCard } from '../../Restaurant/RestaurantCard'
+import { Auth } from '../../Auth/Auth'
 
 const restaurant=[1,1,1,1,1,1,1,1]
 const Home = () => {
@@ -31,6 +32,7 @@ const Home = () => {
                     }
                 </div>
         </section>
+        
     </div>
   )
 }
